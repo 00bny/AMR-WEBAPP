@@ -60,7 +60,7 @@ export function LoginForm({ onSubmit, submitting, errorMessage }: LoginFormProps
           disabled={submitting}
           autoComplete="current-password"
           placeholder="Enter your AMR password"
-          className="w-full rounded-lg border border-base-600 bg-base-800 px-3 py-2.5 text-base-100 outline-none transition-colors focus:border-signal-500 disabled:opacity-50"
+          className="w-full rounded-lg border border-base-600 bg-base-800 px-3 py-2.5 text-base-100 placeholder:text-base-500 outline-none transition-colors focus:border-signal-500 disabled:opacity-50"
         />
         <p className="mt-1.5 text-xs text-base-500">
           ระบบไม่บันทึก username/password ไว้ที่ใดทั้งสิ้น ใช้เพื่อเข้าสู่ระบบครั้งนี้เท่านั้น
