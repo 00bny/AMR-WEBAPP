@@ -155,7 +155,7 @@ export default function Home() {
             {(job.status === "ready_to_chart" || job.status === "done") && (
               <ChartSelector
                 onGenerate={handleGenerateCharts}
-                generating={actionPending || job.status === "charting"}
+                generating={actionPending}
                 readyCategories={job.chart_categories_ready}
               />
             )}
