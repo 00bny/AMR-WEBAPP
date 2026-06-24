@@ -46,7 +46,7 @@ export function LoginForm({ onSubmit, submitting, errorMessage }: LoginFormProps
           onChange={(e) => setUsername(e.target.value)}
           disabled={submitting}
           autoComplete="username"
-          placeholder="020004969598"
+          placeholder="Enter your AMR username"
           className="w-full rounded-lg border border-base-600 bg-base-800 px-3 py-2.5 text-base-100 placeholder:text-base-500 outline-none transition-colors focus:border-signal-500 disabled:opacity-50"
         />
       </div>
@@ -59,6 +59,7 @@ export function LoginForm({ onSubmit, submitting, errorMessage }: LoginFormProps
           onChange={(e) => setPassword(e.target.value)}
           disabled={submitting}
           autoComplete="current-password"
+          placeholder="Enter your AMR password"
           className="w-full rounded-lg border border-base-600 bg-base-800 px-3 py-2.5 text-base-100 outline-none transition-colors focus:border-signal-500 disabled:opacity-50"
         />
         <p className="mt-1.5 text-xs text-base-500">
