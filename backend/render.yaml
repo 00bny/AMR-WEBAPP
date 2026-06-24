@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: amr-load-profile-backend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: "https://YOUR-VERCEL-DOMAIN.vercel.app"
+      - key: MAX_CONCURRENT_SCRAPES
+        value: "1"
+      - key: TEMP_ROOT
+        value: "/tmp/amr_jobs"
+      - key: JOB_TTL_AFTER_DONE_SECONDS
+        value: "1800"
+      - key: JOB_TTL_MAX_SECONDS
+        value: "7200"
+    healthCheckPath: /health
